@@ -13,7 +13,7 @@ services:
       # Persist database and app settings across container restarts
       - config:/config
       # Persist XMLTV output across container restarts (optional, only if you use the XMLTV output feature)
-      - xmltv:/xmltv
+      - xmltv:/app/xmltv
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - Lineup__ConfigPath=/config
