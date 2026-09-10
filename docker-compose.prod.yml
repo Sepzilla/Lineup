@@ -9,7 +9,7 @@ services:
       # Persist database and app settings across container restarts
       - config:/config
       # Persist XMLTV output across container restarts (optional, only if you use the XMLTV output feature)
-      - xmltv:/xmltv
+      - xmltv:/app/xmltv
       # Mount a directory containing your PFX certificate for HTTPS
       # e.g., place lineup.pfx in ./certs/
       - ./certs:/app/certs:ro
